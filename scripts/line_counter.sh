@@ -1,9 +1,5 @@
 #!/bin/bash
 
-echo -e "#Test_Actions\n" > README.md
-echo -e "##Test result\n" >> README.md
-
-LINES=$(cat main.cpp | wc -l)
-echo -e "Lines in main.cpp: $LINES\n" >> README.md
-SRC_COUNT=$(cat *.cpp | wc -l)
-echo -e "lines in code base: $SRC_COUNT\n" >> README.md
+SRC_LINE_COUNT=$(cat *.cpp | wc -l)
+echo -e "SRC_LINE_COUNT: $SRC_LINE_COUNT"
+sed  -e "s/__LINES__/${SRC_LINE_COUNT}/" script/report-template.md > README.md
