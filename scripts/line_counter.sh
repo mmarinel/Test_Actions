@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "#Test_Actions" > README.md
-echo "#Test result" >> README.md
+echo -e "#Test_Actions\n" > README.md
+echo -e "#Test result\n" >> README.md
 
 LINES=$(cat main.cpp | wc -l)
-echo "Lines in main.cpp: $LINES" >> README.md
+echo -e "Lines in main.cpp: $LINES\n" >> README.md
 SRC_COUNT=$(cat *.cpp | wc -l)
-echo "lines in code base: $SRC_COUNT" >> README.md
+echo -e "lines in code base: $SRC_COUNT\n" >> README.md
