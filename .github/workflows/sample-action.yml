@@ -11,4 +11,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4.1.1
       - name: Line counter operation
-        run: chmod +x ./script/line_counter.sh && ./script/line_counter.sh
+        run: chmod +x ./scripts/line_counter.sh && ./scripts/line_counter.sh
