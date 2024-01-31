@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "#Test result" >> README.md
 
