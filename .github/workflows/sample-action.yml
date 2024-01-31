@@ -5,7 +5,10 @@ on: push
 
 jobs:
   line-counter:
+    name: line counter job
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4.1.1
+      - name: Line counter operation
+        run: chmod +x ./script/line_counter.sh && ./script/line_counter.sh
