@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "#Test_Actions" > README.md
 echo "#Test result" >> README.md
 
 LINES=$(cat main.cpp | wc -l)
