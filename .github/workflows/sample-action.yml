@@ -1,0 +1,8 @@
+
+name: line-counter
+
+on: push
+
+jobs:
+  line-counter:
+    runs-on: ubuntu-latest
